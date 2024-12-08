@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Font */
+* {
+  font-family: Outfit;
+  user-select: none;
+}
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (max-width: 640px) {
+  a.active {
+    background-color: black;
+    color: white;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* admin */
+@layer components {
+  .select_input_textarea {
+    @apply rounded-[4px] border border-solid border-[#c2c2c2] outline-[#c586a5];
+  }
+}
